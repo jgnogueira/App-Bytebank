@@ -27,17 +27,19 @@ class ListaTransferencias extends StatelessWidget {
 }
 
 class ItemTransferencia extends StatelessWidget {
-  final Transferencia transferencia;
+  final Transferencia _transferencia;
 
-  const ItemTransferencia({Key key, this.transferencia}) : super(key: key);
+  const ItemTransferencia({Key key, transferencia})
+      : _transferencia = transferencia,
+        super(key: key);
 
   @override
   Widget build(BuildContext context) {
     return Card(
       child: ListTile(
         leading: Icon(Icons.monetization_on),
-        title: Text(transferencia.valorTransferencia.toString()),
-        subtitle: Text(transferencia.numeroConta.toString()),
+        title: Text(_transferencia.valorTransferencia.toString()),
+        subtitle: Text(_transferencia.numeroConta.toString()),
       ),
     );
   }
