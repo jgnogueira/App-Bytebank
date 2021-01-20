@@ -16,7 +16,9 @@ class BytebankApp extends StatelessWidget {
 class FormularioTransferencia extends StatelessWidget {
   @override
   Widget build(BuildContext context) {
-    return Container();
+    return Scaffold(
+        appBar: AppBar(title: Text('Criando Transferências')),
+        body: Text('Hello'));
   }
 }
 
