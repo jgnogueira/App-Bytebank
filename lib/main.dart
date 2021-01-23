@@ -7,7 +7,7 @@ class BytebankApp extends StatelessWidget {
   Widget build(BuildContext context) {
     return MaterialApp(
       home: Scaffold(
-        body: FormularioTransferencia(),
+        body: ListaTransferencias(),
       ),
     );
   }
@@ -90,7 +90,10 @@ class ListaTransferencias extends StatelessWidget {
         children: [
           ItemTransferencia(
             transferencia: Transferencia(175.0, 112233),
-          )
+          ),
+          ItemTransferencia(
+            transferencia: Transferencia(190.0, 112233),
+          ),
         ],
       ),
       floatingActionButton: FloatingActionButton(
