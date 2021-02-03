@@ -2,7 +2,10 @@ class Transferencia {
   final double valorTransferencia;
   final int numeroConta;
 
-  Transferencia(this.valorTransferencia, this.numeroConta);
+  Transferencia(
+    this.valorTransferencia,
+    this.numeroConta,
+  );
 
   @override
   String toString() {
